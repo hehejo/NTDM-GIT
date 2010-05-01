@@ -2,6 +2,27 @@
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[final]{listings}
+
+\lstset{language=bash}
+\lstset{basicstyle=\ttfamily\small\mdseries}
+\definecolor{darkgrey}{rgb}{0.95,0.95,0.95}
+\definecolor{darkgreen}{rgb}{0.3,0.6,0.3}
+\definecolor{darkred}{rgb}{0.8,0.2,0.2}
+\definecolor{darkblue}{rgb}{0.1,0.15,0.85}
+%\lstset{backgroundcolor=\color{darkgrey}}
+\lstset{stringstyle=\color{darkred}}
+\lstset{numberstyle=\color{darkgreen}}
+\lstset{linewidth=\textwidth, showstringspaces=false}
+\lstset{captionpos=tb}
+\lstset{tabsize=1}
+\lstset{breaklines=true}
+\lstset{breakatwhitespace=true}
+\lstset{numbers=left}
+\lstset{float=htb}
+\lstset{numberstyle=\ttfamily\tiny}
+\lstset{numbersep=10pt}
 
 \usetheme{Singapore}
 \usecolortheme{crane}
@@ -29,10 +50,6 @@
 			\item schöner
 		\end{itemize}
 	\end{block}
-}
-
-\frame{
-\tableofcontents
 }
 
 
@@ -108,6 +125,18 @@
 		\center
 		\includegraphics{pics/branch_04.png}	
 	\end{figure}
+}
+
+
+\subsubsection{tracked remnote branch}
+\frame{
+	\frametitle{tracked remote branch}
+	\begin{block}{checkout tracked remote branch}
+		\lstinputlisting{listings/tracked_branch.sh}
+	\end{block}
+	\begin{block}{pull, push and delete}
+		\lstinputlisting{listings/pull_push_del_tb.sh}
+	\end{block}
 }
 
 \subsection{merge}
