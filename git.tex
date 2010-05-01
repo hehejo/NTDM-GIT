@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage[final]{listings}
+\usepackage{multicol}
 
 \lstset{language=bash}
 \lstset{basicstyle=\ttfamily\small\mdseries}
@@ -14,11 +15,14 @@
 %\lstset{backgroundcolor=\color{darkgrey}}
 \lstset{stringstyle=\color{darkred}}
 \lstset{numberstyle=\color{darkgreen}}
+\lstset{commentstyle=\color{darkgreen}}
+\lstset{keywordstyle=\color{darkblue}}
 \lstset{linewidth=\textwidth, showstringspaces=false}
 \lstset{captionpos=tb}
 \lstset{tabsize=1}
 \lstset{breaklines=true}
 \lstset{breakatwhitespace=true}
+\lstset{morekeywords={git}}
 \lstset{numbers=left}
 \lstset{float=htb}
 \lstset{numberstyle=\ttfamily\tiny}
@@ -89,15 +93,26 @@
 	\begin{block}{O-Ton Linus Torvalds}
 	DVCS are cool.\\
 	You're an idiot if you're not using git!\\
-	\small{http://www.youtube.com/watch?v=4XpnKHJAok8&fmt=18}	
+	\small{http://www.youtube.com/watch?v=4XpnKHJAok8}	
 	\end{block}
 }
 
 \subsection{init and commit}
 \frame{
 	\frametitle{init}
-	\lstinputlisting{listings/init.sh}
+	\lstinputlisting{listings/init.sh}	
+}
+
+\frame{
+	\frametitle{staging}
 	
+	\lstinputlisting{listings/stage.sh}
+}
+
+\frame{
+	\frametitle{staging - split}
+	
+	\lstinputlisting{listings/split.sh}	
 }
 
 \subsection{branch}
