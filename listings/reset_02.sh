@@ -1,1 +1,1 @@
-$ git reset HEAD^
+$ git reset (--hard) HEAD^

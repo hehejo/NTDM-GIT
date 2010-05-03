@@ -1,3 +1,3 @@
-$ git reset HEAD <file> #unstage
+$ git reset <file> #unstage
 $ git checkout -- <file> #revert modifications
 
